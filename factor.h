@@ -15,5 +15,7 @@ typedef struct my_node{
 void myNode(long long int data);
 long long int logic(long long int num);
 node *reverse(node *head);
+/*void newNode(long long int data);
+long long int logic_1(long long int num);*/
 
 #endif
