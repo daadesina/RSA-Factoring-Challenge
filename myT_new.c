@@ -7,7 +7,7 @@
 
 node *top;
 
-void myNode(long int data)
+void myNode(long long int data)
 {
 	node *node0;
 	node0 = malloc(sizeof(node0));
@@ -35,11 +35,11 @@ void myNode(long int data)
 	return (head);
 }*/
 
-int logic(long int num)
+long long int logic(long long int num)
 {
-	long int mod;
-	long int i;
-	long int first;
+	long long int mod;
+	long long int i;
+	long long int first;
 	node *temp;
 
 
