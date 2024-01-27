@@ -18,7 +18,6 @@ int main(int argc, char* argv[])
 		first = logic(num);
 		second = num / first;
 		printf("%lld = %lld * %lld\n", num, second, first);
-		/*printf("%ld\n", num);*/
 	}
 
 	fclose(myFile);

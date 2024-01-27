@@ -1,10 +1,5 @@
 #include "factor.h"
 
-/*typedef struct my_node{
-	long int data;
-	struct my_node *link;
-}node;*/
-
 node *top;
 
 void myNode(long long int data)
@@ -18,22 +13,6 @@ void myNode(long long int data)
 	top = node0;
 
 }
-
-/*node *reverse(node *head)
-{
-	node *prev;
-	node *next;
-
-	while(head != NULL)
-	{
-		next = head->link;
-		head->link = prev;
-		prev = head;
-		head = next;
-	}
-	head = prev;
-	return (head);
-}*/
 
 long long int logic(long long int num)
 {
@@ -56,9 +35,6 @@ long long int logic(long long int num)
 			myNode(i);
 		}
 	}
-
-	/*logic*/
-        /*temp = reverse(top);*/
 
 	temp = top;
         first = temp->data;
