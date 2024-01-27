@@ -23,7 +23,7 @@ long long int logic(long long int num)
 
 
 
-	for (i = 1000000; i >= 2; i--)
+	for (i = 100000000; i >= 2; i--)
 	{
 		if(i == num)
 			continue;
