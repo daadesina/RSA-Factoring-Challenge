@@ -2,7 +2,7 @@
 
 node *top;
 
-void myNode(long long int data)
+/*void myNode(long long int data)
 {
 	node *node0;
 	node0 = malloc(sizeof(node0));
@@ -12,7 +12,7 @@ void myNode(long long int data)
 	node0->link = top;
 	top = node0;
 
-}
+}*/
 
 long long int logic(long long int num)
 {
@@ -23,7 +23,7 @@ long long int logic(long long int num)
 
 
 
-	for (i = 100000000; i >= 2; i--)
+	for (i = 2; i <= num; i++)
 	{
 		if(i == num)
 			continue;
@@ -32,13 +32,14 @@ long long int logic(long long int num)
 
 		if (mod == 0)
 		{
-			myNode(i);
+			return (i);
+			break;
 		}
 	}
 
-	temp = top;
+	/*temp = top;
         first = temp->data;
 
-	return (first);
+	return (first);*/
 
 }
