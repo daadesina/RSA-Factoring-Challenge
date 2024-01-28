@@ -13,13 +13,13 @@ int main(int argc, char* argv[])
 	myFile = fopen(argv[1], "r");
 	fgets(buffer, 300, myFile);
 
-	/*while(fgets(buffer, 300, myFile) != NULL)
-	{*/
+	while(fgets(buffer, 300, myFile) != NULL)
+	{
 		num = strtoll(buffer, NULL, 0);
 		first = logic(num);
 		second = num / first;
 		printf("%lld=%lld*%lld\n", num, second, first);
-	//}
+	}
 
 	fclose(myFile);
 
